@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- file:/C:/Users/User/VStest/shoppingList.html -->
+    <!-- <script type="text/javascript" src="https://livejs.com/live.js"></script> -->
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
+    <!-- <meta http-equiv="refresh" content="5"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <title>Shopping List</title> -->
+    <link rel="stylesheet" href="ShoppingList.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>Shopping List</header>
+      <div class="inputBox">
+        <input id="myInput" type="text" placeholder="Add a new item" />
+        <button id="myBtn"><i class="fas fa-plus"></i></button>
+      </div>
+      <ol class="shoppingItems"></ol>
+      <div class="footer">
+        <span>
+          you have <span class="pendingTasks"></span> pending task(s)</span
+        >
+        <button>Clear All</button>
+      </div>
+    </div>
+    <script src="ShoppingList.js"></script>
+  </body>
+</html>
