@@ -45,16 +45,18 @@ whatIsThis();
 
 addButton.onclick = () => {
   let userInput = inputBox.value;
+  console.log(userInput);
   let lclStr = localStorage.getItem("new");
   let myList = [];
-
+  console.log("clicked");
   //if (lclStr) {
-  myList = JSON.parse(lclStr);
+  let test = JSON.parse(lclStr);
+  myList = [myList, ...test];
   //}
-
-  if (inputBox.value !== "") {
-    myList.push(userInput);
-  }
+  console.log(myList);
+  // if (inputBox.value !== "") {
+  myList.push(userInput);
+  // }
 
   localStorage.setItem("new", JSON.stringify(myList));
   console.log(localStorage);
